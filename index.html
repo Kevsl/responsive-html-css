@@ -14,68 +14,107 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <meta
+      name="description"
+      content="Spoticlone, écoutez de la musique  et vos artistes préférés. Plateforme numéro 1 du streaming musical  "
+    />
+    <meta name=" robots" content=" noindex, nofollow" />
   </head>
-  <body>
-    <header class="header">
-      <nav class="">
-        <ul class="headerMenu">
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Register</li>
-          <li>Products</li>
-        </ul>
-      </nav>
-      <img
-        src="./medias/eec071442e9a1b8e017c5a7c1853b880.jpg"
-        class="burgerIcon"
-        alt="icone menu burger"
-      />
-    </header>
+  <body class="relative">
+    <div class="body">
+      <div class="modal"></div>
+      <p class="closeIcon">X</p>
+      <header class="header">
+        <nav class="">
+          <ul class="headerMenu">
+            <li>Home</li>
+            <li>Profile</li>
+            <li>Register</li>
+            <li>Products</li>
+          </ul>
+        </nav>
+        <img
+          src="./medias/eec071442e9a1b8e017c5a7c1853b880.jpg"
+          class="burgerIcon"
+          alt="icone menu burger"
+        />
+      </header>
 
-    <main>
-      <h1 class="mainTitle">
-        <span class="spoticlone">Spoticlone</span> Streaming gratuit, et légal,
-        enfin ... N'en parlez pas non plus en publique.
-      </h1>
+      <main class="main">
+        <h1 class="mainTitle">
+          <span class="spoticlone">Spoticlone</span> Streaming gratuit, et
+          légal, enfin ... N'en parlez pas non plus en publique.
+        </h1>
 
-      <div class="cards">
-        <div class="card">
-          <img src="./medias/1.jpg" alt="Julien Dauré" class="cardImg" />
-          <p class="imgTitle">Julien Dauré</p>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="./medias/1.jpg"
+              alt="Ecoutez la musique de Julien Dauré"
+              class="cardImg"
+            />
+            <p class="imgTitle">Julien Dauré</p>
+          </div>
+          <div class="card">
+            <img src="./medias/2.jpg" alt="Hermione Granger" class="cardImg" />
+            <p class="imgTitle">Hermione Granger</p>
+          </div>
+          <div class="card">
+            <img src="./medias/3.jpg" alt="Claire Shazal" class="cardImg" />
+            <p class="imgTitle">Claire Shazal</p>
+          </div>
+          <div class="card">
+            <img src="./medias/4.jpg" alt="Steeve emplois" class="cardImg" />
+            <p class="imgTitle">Steeve emplois</p>
+          </div>
+          <div class="card">
+            <img src="./medias/5.jpg" alt="Dreic" class="cardImg" />
+            <p class="imgTitle">Dreic</p>
+          </div>
+          <div class="card">
+            <img src="./medias/6.jpg" alt="Avichu" class="cardImg" />
+            <p class="imgTitle">Avichu</p>
+          </div>
+          <div class="card">
+            <img src="./medias/7.jpg" alt="Pocahantas" class="cardImg" />
+            <p class="imgTitle">Pocahantas</p>
+          </div>
+          <div class="card">
+            <img src="./medias/8.jpg" alt="Ton assureur" class="cardImg" />
+            <p class="imgTitle">Ton assureur</p>
+          </div>
+          <div class="card">
+            <img src="./medias/9.jpg" alt="L'heureux indécis" class="cardImg" />
+            <p class="imgTitle">L'heureux indécis</p>
+          </div>
+
+          <div class="miniCalculator">
+            <input
+              type="number"
+              class="firstNumber"
+              placeholder="Premier nombre"
+            />
+
+            <select class="select">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="x">x</option>
+              <option value="/">/</option>
+            </select>
+
+            <input
+              type="number"
+              class="secondNumber"
+              placeholder="Deuxième nombre"
+            />
+            <button class="calcul">Calcul</button>
+          </div>
+          <p class="result"></p>
         </div>
-        <div class="card">
-          <img src="./medias/2.jpg" alt="Hermione Granger" class="cardImg" />
-          <p class="imgTitle">Hermione Granger</p>
-        </div>
-        <div class="card">
-          <img src="./medias/3.jpg" alt="Claire Shazal" class="cardImg" />
-          <p class="imgTitle">Claire Shazal</p>
-        </div>
-        <div class="card">
-          <img src="./medias/4.jpg" alt="Steeve emplois" class="cardImg" />
-          <p class="imgTitle">Steeve emplois</p>
-        </div>
-        <div class="card">
-          <img src="./medias/5.jpg" alt="Dreic" class="cardImg" />
-          <p class="imgTitle">Dreic</p>
-        </div>
-        <div class="card">
-          <img src="./medias/6.jpg" alt="Avichu" class="cardImg" />
-          <p class="imgTitle">Avichu</p>
-        </div>
-        <div class="card">
-          <img src="./medias/7.jpg" alt="Pocahantas" class="cardImg" />
-          <p class="imgTitle">Pocahantas</p>
-        </div>
-        <div class="card">
-          <img src="./medias/8.jpg" alt="Ton assureur" class="cardImg" />
-          <p class="imgTitle">Ton assureur</p>
-        </div>
-        <div class="card">
-          <img src="./medias/9.jpg" alt="L'heureux indécis" class="cardImg" />
-          <p class="imgTitle">L'heureux indécis</p>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
+  <script src="./js/script.js"></script>
+  <script src="./js/calcul.js"></script>
+  <script src="./js/modal.js"></script>
 </html>
